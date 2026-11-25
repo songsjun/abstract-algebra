@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7fc">
+  <meta name="description" content="按 Dummit 与 Foote 第三版学习抽象代数。逐节读概念、做例题练习，并用基础测验检验理解。">
+  <title>抽象代数学习室</title>
+  <link rel="icon" type="image/png" href="./favicon.png">
+  <link rel="stylesheet" href="./styles.css?v=2">
+  <script src="./course.js" defer></script>
+  <script src="./lessons-groups.js?v=2" defer></script>
+  <script src="./lessons-rings.js?v=2" defer></script>
+  <script src="./lessons-fields.js?v=2" defer></script>
+  <script src="./assessment.js?v=2" defer></script>
+  <script src="./app.js?v=2" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到学习内容</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#study" aria-label="抽象代数学习室，继续学习"><span class="brand-mark" aria-hidden="true">∴</span><span>抽象代数<span class="brand-suffix">学习室</span></span></a>
+      <nav class="top-nav" aria-label="主要导航">
+        <a href="#study" data-tab="lesson">学习</a>
+        <a href="#catalog" data-tab="catalog">教材目录</a>
+        <a href="#assessment" data-tab="assessment">基础测验</a>
+      </nav>
+      <a class="progress-link" href="#review"><span class="header-meter" aria-hidden="true"><span id="header-meter-fill"></span></span><span id="progress-label">学习记录</span></a>
+    </div>
+  </header>
+  <div class="shell">
+    <aside class="desktop-nav" id="desktop-nav" aria-label="学习路径"></aside>
+    <main id="main" tabindex="-1">
+      <noscript>请开启 JavaScript 以使用课程、练习和测验。</noscript>
+    </main>
+  </div>
+  <dialog id="mobile-nav" aria-labelledby="mobile-nav-title">
+    <div class="dialog-head"><h2 id="mobile-nav-title">学习路径</h2><form method="dialog"><button class="button subtle" type="submit">关闭</button></form></div>
+    <div id="mobile-nav-content"></div>
+  </dialog>
+</body>
+</html>
